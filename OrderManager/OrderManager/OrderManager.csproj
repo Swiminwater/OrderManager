@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96FD386C-2159-4C6E-8D4D-9F67F0929159}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OrderManager</RootNamespace>
+    <AssemblyName>OrderManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\OutPut\OrderManager\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comm\FrmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comm\FrmBase.Designer.cs">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrmAbout.designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FrmAuth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrmAuth.Designer.cs">
+      <DependentUpon>FrmAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FrmGongGao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrmGongGao.Designer.cs">
+      <DependentUpon>FrmGongGao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FrmStoreInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrmStoreInfo.Designer.cs">
+      <DependentUpon>FrmStoreInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FrmAuthManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrmAuthManager.Designer.cs">
+      <DependentUpon>FrmAuthManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FrmStoreManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrmStoreManager.Designer.cs">
+      <DependentUpon>FrmStoreManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Comm\FrmBase.resx">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrmAuth.resx">
+      <DependentUpon>FrmAuth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrmGongGao.resx">
+      <DependentUpon>FrmGongGao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrmStoreInfo.resx">
+      <DependentUpon>FrmStoreInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrmAuthManager.resx">
+      <DependentUpon>FrmAuthManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrmStoreManager.resx">
+      <DependentUpon>FrmStoreManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Comm\image\about.gif" />
+    <Content Include="Comm\image\home.png" />
+    <Content Include="Comm\image\loginagain.gif" />
+    <Content Include="Comm\image\loginoff.gif" />
+    <Content Include="Comm\image\deliver.png" />
+    <Content Include="Comm\image\energy.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
